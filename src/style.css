@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #000050, #600000);
+}
+
+.time {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 379.99px;
+  background: #ffffff1a;
+  z-index: 1;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+}
+
+.numbers {
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  transition: all ease 0.5s;
+  margin: 0;
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
+}
+
+li {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 1.9em;
+  font-family: Courier New;
+}
+
+.hoursFirst,
+.hoursLast,
+.minutesFirst,
+.minutesLast,
+.secondsFirst,
+.secondsLast {
+  background: #00000053;
+  color: #fff;
+  cursor: default;
+}
